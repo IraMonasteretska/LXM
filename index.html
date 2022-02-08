@@ -215,11 +215,14 @@
                   <input type="text" placeholder="Last name*">
                   <input type="text" placeholder="Email*">
                   <textarea placeholder="Message"></textarea>
-                  <button class="contacts__btn section-btn">
+                  <!-- <button class="contacts__btn section-btn">
                     send
-                  </button>
+                  </button>  -->
                 </form>
               </div>
+               <button class="contacts__btn section-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                send
+              </button>
             </div>
           </div>
         </div>
@@ -271,6 +274,28 @@
     </footer>
 
   </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="modal__title">
+              Thank You!<br>
+              Your message has been sent.
+            </div>
+            <div class="modal__text">
+              We will contact You as soon as it possible!
+            </div>
+            <div class="modal__btn section-btn">
+              <a href="index.html">Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <script src="js/lib/jquery.js"></script>
